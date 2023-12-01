@@ -244,6 +244,9 @@ public class RentACatTest {
 		r.addCat(c1);
 		r.addCat(c2);
 		r.addCat(c3);
+                Mockito.when(c1.toString()).thenReturn("ID 1. Jennyanydots");
+                Mockito.when(c2.toString()).thenReturn("ID 2. Old Deuteronomy");
+                Mockito.when(c3.toString()).thenReturn("ID 3. Mistoffelees");
 
 		String ret = r.listCats();
 
